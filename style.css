@@ -1,25 +1,570 @@
+/* =========================
+   基本設定
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 60px 30px;
+    margin: 0;
+
+    font-family:
+        "Noto Sans TC",
+        "Microsoft JhengHei",
+        "PingFang TC",
+        Arial,
+        sans-serif;
+
+    color: #252525;
+
+    background-color: #f8f8f6;
+
     line-height: 1.8;
-    color: #222;
-    background-color: #fafafa;
 }
 
-h1 {
-    font-size: 38px;
+
+/* =========================
+   連結
+========================= */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.65;
+}
+
+
+/* =========================
+   頂端選單
+========================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+
+    background-color: rgba(248, 248, 246, 0.95);
+
+    border-bottom: 1px solid #deded8;
+}
+
+.header-inner {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.site-title {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.navigation {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 24px;
+
+    font-size: 14px;
+}
+
+.navigation a {
+    color: #555;
+}
+
+.navigation a:hover {
+    color: #000;
+}
+
+
+/* =========================
+   主要內容
+========================= */
+
+main {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 0 30px;
+}
+
+
+/* =========================
+   首頁
+========================= */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    border-bottom: 1px solid #d6d6d0;
+}
+
+.hero-label {
+    margin: 0 0 20px 0;
+
+    font-size: 12px;
+
+    letter-spacing: 0.18em;
+
+    color: #777;
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(48px, 8vw, 86px);
+
+    line-height: 1.1;
+
+    font-weight: 500;
+
+    letter-spacing: -0.03em;
+}
+
+.hero-subtitle {
+    margin-top: 28px;
+
     margin-bottom: 5px;
+
+    font-size: 23px;
+
+    font-weight: 500;
 }
 
-h2 {
-    font-size: 24px;
-    margin-top: 40px;
-    padding-bottom: 8px;
+.hero-description {
+    max-width: 680px;
+
+    margin-top: 12px;
+
+    font-size: 17px;
+
+    color: #555;
+}
+
+
+/* =========================
+   每個區塊
+========================= */
+
+.section {
+    padding: 90px 0;
+
+    border-bottom: 1px solid #d6d6d0;
+}
+
+.section-title {
+    display: grid;
+
+    grid-template-columns: 50px auto 1fr;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 50px;
+}
+
+.section-number {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 13px;
+
+    color: #888;
+}
+
+.section-title h2 {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        "Noto Serif TC",
+        serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+}
+
+.section-en {
+    text-align: right;
+
+    font-size: 11px;
+
+    letter-spacing: 0.18em;
+
+    color: #888;
+}
+
+.section-content {
+    max-width: 760px;
+
+    margin-left: 65px;
+
+    font-size: 17px;
+}
+
+.section-content p {
+    margin-top: 0;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   研究領域
+========================= */
+
+.research-grid {
+    margin-left: 65px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0;
+
+    border-top: 1px solid #ccc;
+}
+
+.research-item {
+    min-height: 180px;
+
+    padding: 30px;
+
     border-bottom: 1px solid #ccc;
 }
 
-p {
+.research-item:nth-child(odd) {
+    border-right: 1px solid #ccc;
+}
+
+.research-number {
+    display: block;
+
+    margin-bottom: 30px;
+
+    font-size: 11px;
+
+    color: #999;
+}
+
+.research-item h3 {
+    margin: 0 0 8px 0;
+
+    font-size: 20px;
+
+    font-weight: 500;
+}
+
+.research-item p {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* =========================
+   論著
+========================= */
+
+.publication-group {
+    margin-left: 65px;
+
+    margin-bottom: 55px;
+}
+
+.subheading {
+    margin: 0 0 20px 0;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #bbb;
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+.publication {
+    display: grid;
+
+    grid-template-columns: 110px 1fr;
+
+    padding: 22px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.publication-year {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 16px;
+
+    color: #777;
+}
+
+.publication-title {
+    margin: 0;
+
     font-size: 17px;
+
+    font-weight: 500;
+}
+
+.publication-detail {
+    margin: 7px 0 0 0;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* =========================
+   研究計畫
+========================= */
+
+.project {
+    margin-left: 65px;
+
+    display: grid;
+
+    grid-template-columns: 130px 1fr;
+
+    padding: 25px 0;
+
+    border-top: 1px solid #ccc;
+
+    border-bottom: 1px solid #ccc;
+}
+
+.project-year {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    color: #777;
+}
+
+.project h3 {
+    margin: 0 0 10px 0;
+
+    font-size: 19px;
+
+    font-weight: 500;
+}
+
+.project p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #666;
+}
+
+
+/* =========================
+   學術活動
+========================= */
+
+.activity {
+    margin-left: 65px;
+
+    display: grid;
+
+    grid-template-columns: 130px 1fr;
+
+    padding: 22px 0;
+
+    border-top: 1px solid #ddd;
+}
+
+.activity:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+.activity-date {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+.activity-title {
+    margin: 0;
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+.activity-detail {
+    margin: 5px 0 0 0;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* =========================
+   頁尾
+========================= */
+
+footer {
+    background-color: #222;
+
+    color: #eee;
+}
+
+.footer-inner {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 35px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 12px;
+}
+
+.footer-note {
+    color: #999;
+
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================
+   手機版
+========================= */
+
+@media (max-width: 750px) {
+
+    .header-inner {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .navigation {
+        gap: 12px 18px;
+
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .section-title {
+        grid-template-columns: 35px 1fr;
+    }
+
+    .section-en {
+        display: none;
+    }
+
+    .section-content,
+    .research-grid,
+    .publication-group,
+    .project,
+    .activity {
+        margin-left: 0;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .research-item:nth-child(odd) {
+        border-right: none;
+    }
+
+    .publication {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .project,
+    .activity {
+        grid-template-columns: 90px 1fr;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+
+        gap: 5px;
+    }
 }
