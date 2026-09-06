@@ -48,6 +48,52 @@ a:hover {
 
 
 /* =========================
+   論文 LINK 按鈕
+========================= */
+
+.paper-link {
+    display: inline-block;
+
+    margin-left: 8px;
+
+    padding: 1px 7px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 2px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 11px;
+
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.08em;
+
+    color: #666;
+
+    text-decoration: none;
+
+    vertical-align: 1px;
+
+    white-space: nowrap;
+}
+
+.paper-link:hover {
+    color: #222;
+
+    border-color: #444;
+
+    opacity: 1;
+}
+
+
+/* =========================
    頂端選單
 ========================= */
 
@@ -420,7 +466,6 @@ main {
 
 /* =========================
    學術獎項 ＋ 演講與座談
-   使用完全相同的排版
 ========================= */
 
 .simple-list,
@@ -507,15 +552,6 @@ main {
     text-align: right;
 
     white-space: nowrap;
-}
-
-
-/* =========================
-   尚未完成內容
-========================= */
-
-.placeholder {
-    color: #888;
 }
 
 
@@ -670,8 +706,13 @@ footer {
         line-height: 1.65;
     }
 
+    .paper-link {
+        margin-left: 6px;
 
-    /* 學術獎項與演講座談的手機版也完全一致 */
+        padding: 1px 6px;
+
+        font-size: 10px;
+    }
 
     .simple-list ol,
     .talk-list ol {
@@ -693,7 +734,6 @@ footer {
     .talk-list li:last-child {
         padding-bottom: 0;
     }
-
 
     .project-item {
         grid-template-columns: 1fr;
