@@ -34,6 +34,7 @@ body {
 
 a {
     color: inherit;
+
     text-decoration: none;
 }
 
@@ -43,6 +44,7 @@ a:hover {
 
 .text-link {
     text-decoration: underline;
+
     text-underline-offset: 4px;
 }
 
@@ -53,6 +55,7 @@ a:hover {
 
 .site-header {
     position: sticky;
+
     top: 0;
 
     z-index: 100;
@@ -61,6 +64,7 @@ a:hover {
 
     border-bottom: 1px solid #deded8;
 }
+
 
 .header-inner {
     max-width: 1100px;
@@ -78,6 +82,7 @@ a:hover {
     gap: 30px;
 }
 
+
 .site-title {
     font-family:
         "Noto Serif TC",
@@ -92,6 +97,7 @@ a:hover {
     white-space: nowrap;
 }
 
+
 .navigation {
     display: flex;
 
@@ -102,9 +108,11 @@ a:hover {
     font-size: 14px;
 }
 
+
 .navigation a {
     color: #555;
 }
+
 
 .navigation a:hover {
     color: #000;
@@ -140,9 +148,11 @@ main {
     border-bottom: 1px solid #d6d6d0;
 }
 
+
 .hero-name {
     margin: 0;
 }
+
 
 .hero-name h1 {
     margin: 0;
@@ -162,6 +172,7 @@ main {
     letter-spacing: 0.02em;
 }
 
+
 .hero-name-en {
     margin: 13px 0 0 3px;
 
@@ -179,10 +190,12 @@ main {
     color: #666;
 }
 
+
 .hero-description {
     max-width: 800px;
 
     margin-top: 42px;
+
     margin-bottom: 0;
 
     font-size: 17px;
@@ -192,10 +205,12 @@ main {
     color: #555;
 }
 
+
 .hero-interest {
     max-width: 800px;
 
     margin-top: 5px;
+
     margin-bottom: 0;
 
     font-size: 17px;
@@ -207,7 +222,7 @@ main {
 
 
 /* =========================
-   各區塊
+   各主要區塊
 ========================= */
 
 .section {
@@ -215,6 +230,7 @@ main {
 
     border-bottom: 1px solid #d6d6d0;
 }
+
 
 .section-title {
     display: grid;
@@ -228,6 +244,7 @@ main {
     margin-bottom: 50px;
 }
 
+
 .section-number {
     font-family:
         Georgia,
@@ -238,6 +255,7 @@ main {
 
     color: #888;
 }
+
 
 .section-title h2 {
     margin: 0;
@@ -252,6 +270,7 @@ main {
 
     font-weight: 500;
 }
+
 
 .section-en {
     text-align: right;
@@ -276,6 +295,7 @@ main {
     font-size: 17px;
 }
 
+
 .section-content p {
     margin-top: 0;
 
@@ -286,6 +306,16 @@ main {
 /* =========================
    關於我
 ========================= */
+
+/*
+   關於我的內容取消原本的 65px 左側縮排，
+   與學經歷正文貼齊同一條左線
+*/
+
+.about-content {
+    margin-left: 0;
+}
+
 
 .about-text {
     line-height: 1.55;
@@ -305,45 +335,28 @@ main {
 .education-list {
     max-width: 800px;
 
-    margin-left: 65px;
+    margin-left: 0;
 
-    border-top: 1px solid #d6d6d0;
-}
-
-.education-item {
-    display: grid;
-
-    grid-template-columns: 140px 1fr;
-
-    gap: 20px;
-
-    padding: 20px 0;
-
-    border-bottom: 1px solid #d6d6d0;
-}
-
-.education-year {
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 15px;
-
-    color: #777;
-}
-
-.education-info {
     font-size: 17px;
 
-    line-height: 1.6;
+    line-height: 1.55;
+}
 
-    color: #333;
+
+.education-list p {
+    margin-top: 0;
+
+    margin-bottom: 12px;
+}
+
+
+.education-list p:last-child {
+    margin-bottom: 0;
 }
 
 
 /* =========================
-   尚未完成內容
+   尚未完成的內容
 ========================= */
 
 .placeholder {
@@ -361,6 +374,7 @@ footer {
     color: #eee;
 }
 
+
 .footer-inner {
     max-width: 1100px;
 
@@ -375,9 +389,11 @@ footer {
     font-size: 12px;
 }
 
+
 .footer-inner p {
     margin: 0;
 }
+
 
 .footer-note {
     color: #999;
@@ -400,27 +416,33 @@ footer {
         gap: 12px;
     }
 
+
     .navigation {
         gap: 12px 18px;
 
         font-size: 13px;
     }
 
+
     main {
         padding: 0 22px;
     }
+
 
     .hero {
         min-height: 500px;
     }
 
+
     .hero-name h1 {
         font-size: 54px;
     }
 
+
     .hero-name-en {
         font-size: 20px;
     }
+
 
     .hero-description {
         margin-top: 32px;
@@ -428,13 +450,16 @@ footer {
         font-size: 16px;
     }
 
+
     .hero-interest {
         font-size: 16px;
     }
 
+
     .section {
         padding: 65px 0;
     }
+
 
     .section-title {
         grid-template-columns: 35px 1fr;
@@ -444,15 +469,23 @@ footer {
         margin-bottom: 35px;
     }
 
+
     .section-en {
         display: none;
     }
+
 
     .section-content {
         margin-left: 0;
 
         font-size: 16px;
     }
+
+
+    .about-content {
+        margin-left: 0;
+    }
+
 
     .about-text {
         line-height: 1.55;
@@ -462,25 +495,20 @@ footer {
         text-justify: inter-ideograph;
     }
 
+
     .education-list {
         margin-left: 0;
-    }
 
-    .education-item {
-        grid-template-columns: 105px 1fr;
-
-        gap: 15px;
-
-        padding: 18px 0;
-    }
-
-    .education-year {
-        font-size: 14px;
-    }
-
-    .education-info {
         font-size: 16px;
+
+        line-height: 1.55;
     }
+
+
+    .education-list p {
+        margin-bottom: 11px;
+    }
+
 
     .footer-inner {
         flex-direction: column;
