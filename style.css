@@ -283,12 +283,17 @@ main {
 }
 
 
-/* 關於我主要文字：行距稍微縮小 */
+/* 關於我主要文字：
+   行距稍微縮小＋左右對齊 */
 
 .about-text {
     line-height: 1.55;
 
     margin-bottom: 0;
+
+    text-align: justify;
+
+    text-justify: inter-ideograph;
 }
 
 
@@ -404,6 +409,10 @@ footer {
 
     .about-text {
         line-height: 1.55;
+
+        text-align: justify;
+
+        text-justify: inter-ideograph;
     }
 
     .footer-inner {
