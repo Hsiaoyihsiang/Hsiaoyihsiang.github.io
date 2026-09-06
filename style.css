@@ -207,7 +207,7 @@ main {
 
 
 /* =========================
-   每個區塊
+   各區塊
 ========================= */
 
 .section {
@@ -265,7 +265,7 @@ main {
 
 
 /* =========================
-   內文
+   一般內文
 ========================= */
 
 .section-content {
@@ -283,8 +283,9 @@ main {
 }
 
 
-/* 關於我主要文字：
-   行距稍微縮小＋左右對齊 */
+/* =========================
+   關於我
+========================= */
 
 .about-text {
     line-height: 1.55;
@@ -297,7 +298,53 @@ main {
 }
 
 
-/* 「內容整理中」 */
+/* =========================
+   學經歷
+========================= */
+
+.education-list {
+    max-width: 800px;
+
+    margin-left: 65px;
+
+    border-top: 1px solid #d6d6d0;
+}
+
+.education-item {
+    display: grid;
+
+    grid-template-columns: 140px 1fr;
+
+    gap: 20px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #d6d6d0;
+}
+
+.education-year {
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 15px;
+
+    color: #777;
+}
+
+.education-info {
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    color: #333;
+}
+
+
+/* =========================
+   尚未完成內容
+========================= */
 
 .placeholder {
     color: #888;
@@ -413,6 +460,26 @@ footer {
         text-align: justify;
 
         text-justify: inter-ideograph;
+    }
+
+    .education-list {
+        margin-left: 0;
+    }
+
+    .education-item {
+        grid-template-columns: 105px 1fr;
+
+        gap: 15px;
+
+        padding: 18px 0;
+    }
+
+    .education-year {
+        font-size: 14px;
+    }
+
+    .education-info {
+        font-size: 16px;
     }
 
     .footer-inner {
