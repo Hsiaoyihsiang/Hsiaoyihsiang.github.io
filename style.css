@@ -848,3 +848,35 @@ footer {
         gap: 5px;
     }
 }
+
+
+/* =========================
+   日本語版フォント
+   日本語：Noto Serif JP
+   繁體中文：Noto Serif TC fallback
+========================= */
+
+html[lang="ja"] body {
+    font-family:
+        "Noto Serif JP",
+        "Noto Serif TC",
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        "Hiragino Mincho Pro",
+        "PMingLiU",
+        serif;
+}
+
+html[lang="ja"] .site-title,
+html[lang="ja"] .hero-name h1,
+html[lang="ja"] .section-title h2,
+html[lang="ja"] .publication-category h3 {
+    font-family:
+        "Noto Serif JP",
+        "Noto Serif TC",
+        "Yu Mincho",
+        "Hiragino Mincho ProN",
+        "Hiragino Mincho Pro",
+        "PMingLiU",
+        serif;
+}
