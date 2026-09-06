@@ -34,7 +34,6 @@ body {
 
 a {
     color: inherit;
-
     text-decoration: none;
 }
 
@@ -44,7 +43,6 @@ a:hover {
 
 .text-link {
     text-decoration: underline;
-
     text-underline-offset: 4px;
 }
 
@@ -65,7 +63,6 @@ a:hover {
     border-bottom: 1px solid #deded8;
 }
 
-
 .header-inner {
     max-width: 1100px;
 
@@ -79,9 +76,8 @@ a:hover {
 
     justify-content: space-between;
 
-    gap: 30px;
+    gap: 25px;
 }
-
 
 .site-title {
     font-family:
@@ -97,22 +93,21 @@ a:hover {
     white-space: nowrap;
 }
 
-
 .navigation {
     display: flex;
 
     flex-wrap: wrap;
 
-    gap: 24px;
+    justify-content: flex-end;
 
-    font-size: 14px;
+    gap: 18px;
+
+    font-size: 13px;
 }
-
 
 .navigation a {
     color: #555;
 }
-
 
 .navigation a:hover {
     color: #000;
@@ -148,11 +143,9 @@ main {
     border-bottom: 1px solid #d6d6d0;
 }
 
-
 .hero-name {
     margin: 0;
 }
-
 
 .hero-name h1 {
     margin: 0;
@@ -172,7 +165,6 @@ main {
     letter-spacing: 0.02em;
 }
 
-
 .hero-name-en {
     margin: 13px 0 0 3px;
 
@@ -190,12 +182,10 @@ main {
     color: #666;
 }
 
-
 .hero-description {
     max-width: 800px;
 
     margin-top: 42px;
-
     margin-bottom: 0;
 
     font-size: 17px;
@@ -204,13 +194,11 @@ main {
 
     color: #555;
 }
-
 
 .hero-interest {
     max-width: 800px;
 
     margin-top: 5px;
-
     margin-bottom: 0;
 
     font-size: 17px;
@@ -219,7 +207,6 @@ main {
 
     color: #555;
 }
-
 
 .hero-divider {
     width: 100%;
@@ -232,12 +219,10 @@ main {
     border-top: 1px solid #cfcfc8;
 }
 
-
 .hero-contact {
     max-width: 800px;
 
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 
     font-size: 17px;
 
@@ -257,7 +242,6 @@ main {
     border-bottom: 1px solid #d6d6d0;
 }
 
-
 .section-title {
     display: grid;
 
@@ -270,7 +254,6 @@ main {
     margin-bottom: 50px;
 }
 
-
 .section-number {
     font-family:
         Georgia,
@@ -281,7 +264,6 @@ main {
 
     color: #888;
 }
-
 
 .section-title h2 {
     margin: 0;
@@ -296,7 +278,6 @@ main {
 
     font-weight: 500;
 }
-
 
 .section-en {
     text-align: right;
@@ -321,7 +302,6 @@ main {
     font-size: 17px;
 }
 
-
 .section-content p {
     margin-top: 0;
 
@@ -336,7 +316,6 @@ main {
 .about-content {
     margin-left: 0;
 }
-
 
 .about-text {
     line-height: 1.55;
@@ -363,15 +342,129 @@ main {
     line-height: 1.55;
 }
 
-
 .education-list p {
     margin-top: 0;
 
     margin-bottom: 12px;
 }
 
-
 .education-list p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   學術論著
+========================= */
+
+.publication-category {
+    max-width: 900px;
+
+    margin-bottom: 65px;
+}
+
+.publication-category:last-child {
+    margin-bottom: 0;
+}
+
+.publication-category h3 {
+    margin: 0 0 20px 0;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #cfcfc8;
+
+    font-family:
+        "Noto Serif TC",
+        "PMingLiU",
+        serif;
+
+    font-size: 21px;
+
+    font-weight: 500;
+}
+
+.publication-list {
+    margin: 0;
+
+    padding-left: 32px;
+}
+
+.publication-list li {
+    padding: 0 0 16px 5px;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    text-align: justify;
+
+    text-justify: inter-ideograph;
+}
+
+.publication-list li:last-child {
+    padding-bottom: 0;
+}
+
+.note {
+    color: #777;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   學術獎項
+========================= */
+
+.simple-list {
+    max-width: 900px;
+}
+
+.simple-list ol {
+    margin: 0;
+
+    padding-left: 32px;
+}
+
+.simple-list li {
+    padding: 0 0 16px 5px;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    text-align: justify;
+
+    text-justify: inter-ideograph;
+}
+
+.simple-list li:last-child {
+    padding-bottom: 0;
+}
+
+
+/* =========================
+   研究獎助
+========================= */
+
+.grant-list {
+    max-width: 800px;
+
+    font-size: 17px;
+
+    line-height: 1.55;
+}
+
+.grant-list p {
+    margin-top: 0;
+
+    margin-bottom: 12px;
+}
+
+.grant-list p:last-child {
     margin-bottom: 0;
 }
 
@@ -395,7 +488,6 @@ footer {
     color: #eee;
 }
 
-
 .footer-inner {
     max-width: 1100px;
 
@@ -410,11 +502,9 @@ footer {
     font-size: 12px;
 }
 
-
 .footer-inner p {
     margin: 0;
 }
-
 
 .footer-note {
     color: #999;
@@ -437,33 +527,29 @@ footer {
         gap: 12px;
     }
 
-
     .navigation {
-        gap: 12px 18px;
+        justify-content: flex-start;
+
+        gap: 10px 16px;
 
         font-size: 13px;
     }
-
 
     main {
         padding: 0 22px;
     }
 
-
     .hero {
         min-height: 500px;
     }
-
 
     .hero-name h1 {
         font-size: 54px;
     }
 
-
     .hero-name-en {
         font-size: 20px;
     }
-
 
     .hero-description {
         margin-top: 32px;
@@ -471,27 +557,22 @@ footer {
         font-size: 16px;
     }
 
-
     .hero-interest {
         font-size: 16px;
     }
-
 
     .hero-divider {
         margin-top: 20px;
         margin-bottom: 16px;
     }
 
-
     .hero-contact {
         font-size: 16px;
     }
 
-
     .section {
         padding: 65px 0;
     }
-
 
     .section-title {
         grid-template-columns: 35px 1fr;
@@ -501,11 +582,9 @@ footer {
         margin-bottom: 35px;
     }
 
-
     .section-en {
         display: none;
     }
-
 
     .section-content {
         margin-left: 0;
@@ -513,11 +592,9 @@ footer {
         font-size: 16px;
     }
 
-
     .about-content {
         margin-left: 0;
     }
-
 
     .about-text {
         line-height: 1.55;
@@ -527,20 +604,43 @@ footer {
         text-justify: inter-ideograph;
     }
 
-
     .education-list {
-        margin-left: 0;
-
         font-size: 16px;
-
-        line-height: 1.55;
     }
 
-
-    .education-list p {
-        margin-bottom: 11px;
+    .publication-category {
+        margin-bottom: 50px;
     }
 
+    .publication-category h3 {
+        font-size: 20px;
+    }
+
+    .publication-list {
+        padding-left: 25px;
+    }
+
+    .publication-list li {
+        padding-left: 2px;
+
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
+
+    .simple-list ol {
+        padding-left: 25px;
+    }
+
+    .simple-list li {
+        padding-left: 2px;
+
+        font-size: 15px;
+    }
+
+    .grant-list {
+        font-size: 16px;
+    }
 
     .footer-inner {
         flex-direction: column;
