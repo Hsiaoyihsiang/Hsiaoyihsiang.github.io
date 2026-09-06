@@ -221,6 +221,32 @@ main {
 }
 
 
+.hero-divider {
+    width: 100%;
+
+    max-width: 800px;
+
+    margin-top: 24px;
+    margin-bottom: 18px;
+
+    border-top: 1px solid #cfcfc8;
+}
+
+
+.hero-contact {
+    max-width: 800px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
 /* =========================
    各主要區塊
 ========================= */
@@ -306,11 +332,6 @@ main {
 /* =========================
    關於我
 ========================= */
-
-/*
-   關於我的內容取消原本的 65px 左側縮排，
-   與學經歷正文貼齊同一條左線
-*/
 
 .about-content {
     margin-left: 0;
@@ -452,6 +473,17 @@ footer {
 
 
     .hero-interest {
+        font-size: 16px;
+    }
+
+
+    .hero-divider {
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+
+
+    .hero-contact {
         font-size: 16px;
     }
 
