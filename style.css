@@ -34,7 +34,6 @@ body {
 
 a {
     color: inherit;
-
     text-decoration: none;
 }
 
@@ -44,7 +43,6 @@ a:hover {
 
 .text-link {
     text-decoration: underline;
-
     text-underline-offset: 4px;
 }
 
@@ -421,50 +419,23 @@ main {
 
 
 /* =========================
-   學術獎項
+   學術獎項 ＋ 演講與座談
+   使用完全相同的排版
 ========================= */
 
-.simple-list {
-    max-width: 900px;
-}
-
-.simple-list ol {
-    margin: 0;
-
-    padding-left: 32px;
-}
-
-.simple-list li {
-    padding: 0 0 16px 5px;
-
-    font-size: 16px;
-
-    line-height: 1.65;
-
-    text-align: justify;
-
-    text-justify: inter-ideograph;
-}
-
-.simple-list li:last-child {
-    padding-bottom: 0;
-}
-
-
-/* =========================
-   演講與座談
-========================= */
-
+.simple-list,
 .talk-list {
     max-width: 900px;
 }
 
+.simple-list ol,
 .talk-list ol {
     margin: 0;
 
     padding-left: 32px;
 }
 
+.simple-list li,
 .talk-list li {
     padding: 0 0 16px 5px;
 
@@ -477,6 +448,7 @@ main {
     text-justify: inter-ideograph;
 }
 
+.simple-list li:last-child,
 .talk-list li:last-child {
     padding-bottom: 0;
 }
@@ -698,27 +670,30 @@ footer {
         line-height: 1.65;
     }
 
-    .simple-list ol {
-        padding-left: 25px;
-    }
 
-    .simple-list li {
-        padding-left: 2px;
+    /* 學術獎項與演講座談的手機版也完全一致 */
 
-        font-size: 15px;
-    }
-
+    .simple-list ol,
     .talk-list ol {
         padding-left: 25px;
     }
 
+    .simple-list li,
     .talk-list li {
         padding-left: 2px;
+
+        padding-bottom: 16px;
 
         font-size: 15px;
 
         line-height: 1.65;
     }
+
+    .simple-list li:last-child,
+    .talk-list li:last-child {
+        padding-bottom: 0;
+    }
+
 
     .project-item {
         grid-template-columns: 1fr;
