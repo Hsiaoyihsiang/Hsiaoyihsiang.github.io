@@ -447,24 +447,28 @@ main {
 
 
 /* =========================
-   研究獎助
+   演講與座談
 ========================= */
 
-.grant-list {
-    max-width: 800px;
+.talk-list {
+    max-width: 900px;
 
-    font-size: 17px;
+    font-size: 16px;
 
-    line-height: 1.55;
+    line-height: 1.65;
 }
 
-.grant-list p {
+.talk-list p {
     margin-top: 0;
 
-    margin-bottom: 12px;
+    margin-bottom: 18px;
+
+    text-align: justify;
+
+    text-justify: inter-ideograph;
 }
 
-.grant-list p:last-child {
+.talk-list p:last-child {
     margin-bottom: 0;
 }
 
@@ -563,6 +567,7 @@ footer {
 
     .hero-divider {
         margin-top: 20px;
+
         margin-bottom: 16px;
     }
 
@@ -638,8 +643,14 @@ footer {
         font-size: 15px;
     }
 
-    .grant-list {
-        font-size: 16px;
+    .talk-list {
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
+
+    .talk-list p {
+        margin-bottom: 16px;
     }
 
     .footer-inner {
