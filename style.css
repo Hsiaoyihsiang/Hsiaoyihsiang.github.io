@@ -41,6 +41,11 @@ a:hover {
     opacity: 0.65;
 }
 
+.text-link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 
 /* =========================
    頂端選單
@@ -75,7 +80,8 @@ a:hover {
 
 .site-title {
     font-family:
-        Georgia,
+        "Noto Serif TC",
+        "PMingLiU",
         "Times New Roman",
         serif;
 
@@ -123,7 +129,7 @@ main {
 ========================= */
 
 .hero {
-    min-height: 520px;
+    min-height: 620px;
 
     display: flex;
 
@@ -135,7 +141,7 @@ main {
 }
 
 .hero-label {
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
 
     font-size: 12px;
 
@@ -144,41 +150,72 @@ main {
     color: #777;
 }
 
-.hero h1 {
+.hero-name {
     margin: 0;
+}
+
+.hero-name h1 {
+    margin: 0;
+
+    font-family:
+        "Noto Serif TC",
+        "PMingLiU",
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(58px, 8vw, 88px);
+
+    line-height: 1.15;
+
+    font-weight: 500;
+
+    letter-spacing: 0.02em;
+}
+
+.hero-name-en {
+    margin: 13px 0 0 3px;
 
     font-family:
         Georgia,
         "Times New Roman",
         serif;
 
-    font-size: clamp(48px, 8vw, 86px);
+    font-size: 25px;
 
-    line-height: 1.1;
+    letter-spacing: 0.03em;
 
-    font-weight: 500;
-
-    letter-spacing: -0.03em;
+    color: #666;
 }
 
 .hero-subtitle {
-    margin-top: 28px;
+    margin-top: 38px;
 
     margin-bottom: 5px;
 
-    font-size: 23px;
+    font-size: 22px;
 
     font-weight: 500;
 }
 
 .hero-description {
-    max-width: 680px;
+    max-width: 750px;
 
     margin-top: 12px;
+    margin-bottom: 0;
 
     font-size: 17px;
 
     color: #555;
+}
+
+.hero-interest {
+    max-width: 750px;
+
+    margin-top: 4px;
+
+    font-size: 14px;
+
+    color: #888;
 }
 
 
@@ -219,9 +256,9 @@ main {
     margin: 0;
 
     font-family:
-        Georgia,
-        "Times New Roman",
         "Noto Serif TC",
+        "PMingLiU",
+        "Times New Roman",
         serif;
 
     font-size: 30px;
@@ -240,7 +277,7 @@ main {
 }
 
 .section-content {
-    max-width: 760px;
+    max-width: 800px;
 
     margin-left: 65px;
 
@@ -250,219 +287,11 @@ main {
 .section-content p {
     margin-top: 0;
 
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
-
-/* =========================
-   研究領域
-========================= */
-
-.research-grid {
-    margin-left: 65px;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 0;
-
-    border-top: 1px solid #ccc;
-}
-
-.research-item {
-    min-height: 180px;
-
-    padding: 30px;
-
-    border-bottom: 1px solid #ccc;
-}
-
-.research-item:nth-child(odd) {
-    border-right: 1px solid #ccc;
-}
-
-.research-number {
-    display: block;
-
-    margin-bottom: 30px;
-
-    font-size: 11px;
-
-    color: #999;
-}
-
-.research-item h3 {
-    margin: 0 0 8px 0;
-
-    font-size: 20px;
-
-    font-weight: 500;
-}
-
-.research-item p {
-    margin: 0;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 14px;
-
-    color: #777;
-}
-
-
-/* =========================
-   論著
-========================= */
-
-.publication-group {
-    margin-left: 65px;
-
-    margin-bottom: 55px;
-}
-
-.subheading {
-    margin: 0 0 20px 0;
-
-    padding-bottom: 10px;
-
-    border-bottom: 1px solid #bbb;
-
-    font-size: 16px;
-
-    font-weight: 500;
-}
-
-.publication {
-    display: grid;
-
-    grid-template-columns: 110px 1fr;
-
-    padding: 22px 0;
-
-    border-bottom: 1px solid #ddd;
-}
-
-.publication-year {
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 16px;
-
-    color: #777;
-}
-
-.publication-title {
-    margin: 0;
-
-    font-size: 17px;
-
-    font-weight: 500;
-}
-
-.publication-detail {
-    margin: 7px 0 0 0;
-
-    font-size: 14px;
-
-    color: #777;
-}
-
-
-/* =========================
-   研究計畫
-========================= */
-
-.project {
-    margin-left: 65px;
-
-    display: grid;
-
-    grid-template-columns: 130px 1fr;
-
-    padding: 25px 0;
-
-    border-top: 1px solid #ccc;
-
-    border-bottom: 1px solid #ccc;
-}
-
-.project-year {
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    color: #777;
-}
-
-.project h3 {
-    margin: 0 0 10px 0;
-
-    font-size: 19px;
-
-    font-weight: 500;
-}
-
-.project p {
-    max-width: 650px;
-
-    margin: 0;
-
-    color: #666;
-}
-
-
-/* =========================
-   學術活動
-========================= */
-
-.activity {
-    margin-left: 65px;
-
-    display: grid;
-
-    grid-template-columns: 130px 1fr;
-
-    padding: 22px 0;
-
-    border-top: 1px solid #ddd;
-}
-
-.activity:last-child {
-    border-bottom: 1px solid #ddd;
-}
-
-.activity-date {
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 14px;
-
-    color: #777;
-}
-
-.activity-title {
-    margin: 0;
-
-    font-size: 16px;
-
-    font-weight: 500;
-}
-
-.activity-detail {
-    margin: 5px 0 0 0;
-
-    font-size: 14px;
-
-    color: #777;
+.placeholder {
+    color: #888;
 }
 
 
@@ -518,11 +347,19 @@ footer {
     }
 
     .hero {
-        min-height: 430px;
+        min-height: 520px;
     }
 
-    .hero h1 {
-        font-size: 48px;
+    .hero-name h1 {
+        font-size: 54px;
+    }
+
+    .hero-name-en {
+        font-size: 20px;
+    }
+
+    .hero-subtitle {
+        margin-top: 30px;
     }
 
     .section {
@@ -537,29 +374,8 @@ footer {
         display: none;
     }
 
-    .section-content,
-    .research-grid,
-    .publication-group,
-    .project,
-    .activity {
+    .section-content {
         margin-left: 0;
-    }
-
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .research-item:nth-child(odd) {
-        border-right: none;
-    }
-
-    .publication {
-        grid-template-columns: 80px 1fr;
-    }
-
-    .project,
-    .activity {
-        grid-template-columns: 90px 1fr;
     }
 
     .footer-inner {
