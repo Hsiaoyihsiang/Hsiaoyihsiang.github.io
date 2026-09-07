@@ -268,6 +268,41 @@ main {
     border-bottom: 1px solid #d6d6d0;
 }
 
+
+/* =========================
+   首頁姓名與照片
+========================= */
+
+.hero-top {
+    width: 100%;
+
+    max-width: 950px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 55px;
+}
+
+.hero-photo {
+    width: 220px;
+
+    height: 220px;
+
+    flex: 0 0 220px;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 50%;
+}
+
 .hero-name {
     margin: 0;
 }
@@ -737,6 +772,24 @@ footer {
         min-height: auto;
 
         padding: 30px 0 45px;
+    }
+
+    .hero-top {
+        flex-direction: column-reverse;
+
+        align-items: flex-start;
+
+        justify-content: flex-start;
+
+        gap: 25px;
+    }
+
+    .hero-photo {
+        width: 150px;
+
+        height: 150px;
+
+        flex: 0 0 150px;
     }
 
     .hero-name h1 {
