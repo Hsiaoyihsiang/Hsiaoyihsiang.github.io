@@ -1,3 +1,7 @@
+/* =========================
+   基本設定
+========================= */
+
 * {
     box-sizing: border-box;
 }
@@ -90,7 +94,7 @@ a:hover {
 
 
 /* =========================
-   頂端
+   頂端選單
 ========================= */
 
 .site-header {
@@ -135,6 +139,11 @@ a:hover {
     white-space: nowrap;
 }
 
+
+/* =========================
+   頂端右側
+========================= */
+
 .header-actions {
     display: flex;
 
@@ -146,6 +155,11 @@ a:hover {
 
     margin-left: auto;
 }
+
+
+/* =========================
+   導覽選單
+========================= */
 
 .navigation {
     display: flex;
@@ -224,7 +238,7 @@ a:hover {
 
 
 /* =========================
-   主體
+   主要內容
 ========================= */
 
 main {
@@ -253,6 +267,11 @@ main {
 
     border-bottom: 1px solid #d6d6d0;
 }
+
+
+/* =========================
+   首頁姓名與照片
+========================= */
 
 .hero-top {
     width: 100%;
@@ -397,7 +416,7 @@ main {
 
 
 /* =========================
-   主要區塊
+   各主要區塊
 ========================= */
 
 .section {
@@ -471,6 +490,11 @@ main {
 
     margin-bottom: 20px;
 }
+
+
+/* =========================
+   關於我
+========================= */
 
 .about-content {
     margin-left: 0;
@@ -546,11 +570,7 @@ main {
 }
 
 .membership-list p {
-    margin: 0 0 8px 0;
-}
-
-.membership-list p:last-child {
-    margin-bottom: 0;
+    margin: 0;
 }
 
 
@@ -617,7 +637,85 @@ main {
 
 
 /* =========================
-   獎項／演講
+   名單之後：年度標籤
+========================= */
+
+.year-publication h3 {
+    margin-bottom: 14px;
+}
+
+.year-tabs {
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    margin: 0 0 30px 0;
+
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.year-tab {
+    appearance: none;
+
+    flex: 0 0 auto;
+
+    margin: 0;
+
+    padding: 4px 1px 7px;
+
+    border: 0;
+
+    border-bottom: 2px solid transparent;
+
+    background: transparent;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    color: #888;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.year-tab:hover {
+    color: #222;
+}
+
+.year-tab.active {
+    color: #222;
+
+    border-bottom-color: #222;
+
+    font-weight: 600;
+}
+
+.year-tab:focus-visible {
+    outline: 1px solid #777;
+
+    outline-offset: 4px;
+}
+
+.year-panel[hidden] {
+    display: none;
+}
+
+
+/* =========================
+   學術獎項 ＋ 演講與座談
 ========================= */
 
 .simple-list,
@@ -912,6 +1010,18 @@ footer {
         font-size: 15px;
 
         line-height: 1.65;
+    }
+
+    .year-tabs {
+        gap: 20px;
+
+        margin-bottom: 26px;
+    }
+
+    .year-tab {
+        font-size: 13px;
+
+        padding-bottom: 6px;
     }
 
     .paper-link {
