@@ -1,7 +1,3 @@
-/* =========================
-   基本設定
-========================= */
-
 * {
     box-sizing: border-box;
 }
@@ -94,7 +90,7 @@ a:hover {
 
 
 /* =========================
-   頂端選單
+   頂端
 ========================= */
 
 .site-header {
@@ -139,11 +135,6 @@ a:hover {
     white-space: nowrap;
 }
 
-
-/* =========================
-   頂端右側
-========================= */
-
 .header-actions {
     display: flex;
 
@@ -155,11 +146,6 @@ a:hover {
 
     margin-left: auto;
 }
-
-
-/* =========================
-   導覽選單
-========================= */
 
 .navigation {
     display: flex;
@@ -238,7 +224,7 @@ a:hover {
 
 
 /* =========================
-   主要內容
+   主體
 ========================= */
 
 main {
@@ -267,11 +253,6 @@ main {
 
     border-bottom: 1px solid #d6d6d0;
 }
-
-
-/* =========================
-   首頁姓名與照片
-========================= */
 
 .hero-top {
     width: 100%;
@@ -416,7 +397,7 @@ main {
 
 
 /* =========================
-   各主要區塊
+   主要區塊
 ========================= */
 
 .section {
@@ -491,11 +472,6 @@ main {
     margin-bottom: 20px;
 }
 
-
-/* =========================
-   關於我
-========================= */
-
 .about-content {
     margin-left: 0;
 }
@@ -532,6 +508,48 @@ main {
 }
 
 .education-list p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   所屬學會
+========================= */
+
+.membership-block {
+    max-width: 800px;
+
+    margin-top: 48px;
+}
+
+.membership-block h3 {
+    margin: 0 0 18px 0;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #cfcfc8;
+
+    font-family:
+        "Noto Serif TC",
+        "PMingLiU",
+        serif;
+
+    font-size: 21px;
+
+    font-weight: 500;
+}
+
+.membership-list {
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+.membership-list p {
+    margin: 0 0 8px 0;
+}
+
+.membership-list p:last-child {
     margin-bottom: 0;
 }
 
@@ -599,7 +617,7 @@ main {
 
 
 /* =========================
-   學術獎項 ＋ 演講與座談
+   獎項／演講
 ========================= */
 
 .simple-list,
@@ -864,6 +882,18 @@ footer {
         font-size: 16px;
     }
 
+    .membership-block {
+        margin-top: 38px;
+    }
+
+    .membership-block h3 {
+        font-size: 20px;
+    }
+
+    .membership-list {
+        font-size: 15px;
+    }
+
     .publication-category {
         margin-bottom: 50px;
     }
@@ -961,7 +991,8 @@ html[lang="ja"] body {
 html[lang="ja"] .site-title,
 html[lang="ja"] .hero-name h1,
 html[lang="ja"] .section-title h2,
-html[lang="ja"] .publication-category h3 {
+html[lang="ja"] .publication-category h3,
+html[lang="ja"] .membership-block h3 {
     font-family:
         "Noto Serif JP",
         "Noto Serif TC",
